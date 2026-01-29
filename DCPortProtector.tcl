@@ -58,9 +58,9 @@ foreach t $trusted_list {
     }
 }
 
-# If trusted, do nothing
+# If trusted, log it and do nothing
 if {$trusted} {
-    puts "AUTO-QUARANTINE: Trusted MAC $mac on $intf. No action taken."
+    puts "AUTO-QUARANTINE: Known MAC $mac detected on $intf. No action taken."
     return
 }
 
