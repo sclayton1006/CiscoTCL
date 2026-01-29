@@ -1,4 +1,4 @@
 event manager applet AUTO_QUARANTINE
  event syslog pattern "LINK-3-UPDOWN.*up"
  action 1.0 cli command "enable"
- action 2.0 cli command "tclsh flash:/auto_quarantine.tcl $_syslog_msg"
+ action 2.0 cli command "tclsh flash:/DCPortProtector.tcl $_syslog_msg"
