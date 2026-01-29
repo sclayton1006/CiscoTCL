@@ -8,14 +8,10 @@ A small repository of `tclsh` script ideas to help engineers automate and protec
 
 The script provides a lightweight, on‑box “quarantine” mechanism using Cisco EEM and Tcl.
 
----
-
 ## Requirements
 - **DCPortProtectorEEM** — EEM applet that triggers the script  
 - **DCPortProtector.tcl** — Tcl script that performs MAC validation and quarantining  
 - **flash:/trusted_macs.db** — Text file containing one trusted MAC address per line  
-
----
 
 ## Function and Structure
 The system works by using EEM to trigger a Tcl script whenever a device connects to a switchport.
@@ -42,7 +38,7 @@ The system works by using EEM to trigger a Tcl script whenever a device connects
    - A log entry is generated  
 
 This provides immediate isolation of untrusted devices without affecting known servers or infrastructure.  
----   
+   
 ### Sample Output
 **If MAC is known:** AUTO-QUARANTINE: Known MAC aaaa.bbbb.cccc detected on Gi1/0/1. No action taken.  
 **If MAC is unknown:** AUTO-QUARANTINE: Unknown MAC aaaa.bbbb.cccc on Gi1/0/1. Moving to VLAN 999.
