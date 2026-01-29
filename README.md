@@ -16,5 +16,5 @@ The script uses EEM to trigger a TCL script in the event of a device being conne
    - If the MAC address is not known, move the port to VLAN 999 (state suspend) and set the switchport to mode access, shut down the interface and add an entry to the log
   
 ### Sample Output
-**If MAC is known:** AUTO-QUARANTINE: Known MAC aaaa.bbbb.cccc detected on Gi1/0/1. No action taken.
+**If MAC is known:** AUTO-QUARANTINE: Known MAC aaaa.bbbb.cccc detected on Gi1/0/1. No action taken.  
 **If MAC is unknown:** AUTO-QUARANTINE: Unknown MAC aaaa.bbbb.cccc on Gi1/0/1. Moving to VLAN 999.
