@@ -5,8 +5,7 @@ A small repo for tclsh script ideas to help engineers keep their networks runnin
 The idea behind this script is to protect a data centre environment from a foregin device being added to the switchports. This could be an unknown device from a bad actor. 
 
 ### Requirements
-`DCPortProtectorEEM` required in IOS to trigger the script
-`DCPortProtector.tcl` required script to move the interface (if needed)
+`DCPortProtectorEEM` required in IOS to trigger the script; `DCPortProtector.tcl` required script to move the interface (if needed)
 
 ### Function and Structure
 The script uses EEM to trigger a TCL script in the event of a device being connected that the switch does **NOT** know about. Structure below:
