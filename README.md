@@ -17,14 +17,9 @@ The script provides a lightweight, on‑box “quarantine” mechanism using Cis
 The system works by using EEM to trigger a Tcl script whenever a device connects to a switchport.
 
 ### Workflow
-1. **EEM trigger** fires when a log entry containing  
-   `LINK-3-UPDOWN.*up`  
-   appears (indicating a port has come up).
-
+1. **EEM trigger** fires when a log entry containing `LINK-3-UPDOWN.*up` appears (indicating a port has come up).
 2. **Tcl script** runs and checks the MAC address learned on that interface.
-
-3. The script compares the MAC against the trusted list stored in  
-   `flash:/trusted_macs.db`.
+3. The script compares the MAC against the trusted list stored in `flash:/trusted_macs.db`.
 
 4. **If the MAC is known**  
    - No configuration changes are made  
