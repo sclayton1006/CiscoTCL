@@ -1,4 +1,4 @@
-# auto_quarantine.tcl
+# DCPortProtector.tcl
 # Automatically quarantine unknown devices by moving their port to VLAN 999
 # requires a "trusted_macs.db" file in flash. Run flash:/trusted_macs.db to create the file
 
