@@ -32,7 +32,7 @@ The system works by using EEM to trigger a Tcl script whenever a device connects
    - The interface is shut down  
    - A log entry is generated  
 
-This provides immediate isolation of untrusted devices without affecting known servers or infrastructure.  
+This provides immediate isolation of untrusted devices without affecting known servers or infrastructure including reboots and line flaps.
    
 ### Sample Output
 **If MAC is known:** AUTO-QUARANTINE: Known MAC aaaa.bbbb.cccc detected on Gi1/0/1. No action taken.  
